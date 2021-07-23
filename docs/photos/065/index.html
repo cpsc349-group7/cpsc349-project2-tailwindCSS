@@ -4,16 +4,50 @@
         <meta charset="utf-8"/>
         <title>A document with pet photos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/cpsc349-project2/styles/tailwind.css">
-        <link rel="stylesheet" href="/cpsc349-project2/styles/main.css">
+        <link rel="stylesheet" href="/styles/tailwind.css">
+        <link rel="stylesheet" href="/styles/main.css">
     </head>
-    <body style="background-color: dimgray;">
+    <style>
+        :root {
+  --red: 83;
+  --green: 88;
+  --blue: 111;
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+.background {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+    </style>
+    <body class="background">
         <div class="wrapper">    
             <nav>
                 
-                <a href="/">Home</a>
+                <a href="/cpsc349-project1/">Home</a>
                 
-                <a href="/about/">About</a>
+                <a href="/cpsc349-project1/about/">About</a>
             </nav>
             <header>
                 <h1>
@@ -25,24 +59,28 @@
             </header>
             <h1></h1>
             
-    <figure>
+<div class="row">
+        <div class= "petContent column">
+            <figure>
         <img src="https://images.unsplash.com/photo-1584297469357-219cdc958630" height="600" />
         <figcaption>Something suspicious moving there in snow...lets have a look</figcaption>
     </figure>
 
-<div>
-    <div>
-        <h1>Info</h1>
-        <p>Camera Make: </p>
-        <p>Camera Model: </p>
-        <p>Downloads: 1840</p>
-        <p>Photo Submitted On: 2020-03-15 18:39:05.346005</p>
-        <p>Tags: ["photos"]</p>
-    </div>
-    <div>
-        <h1>Credit</h1>
-        <p>Photographer Name: Jonatan Pie</p>
-        <p>Username: r3dmax</p>
+        </div>
+    <div class="column infoPadding">
+        <div>
+            <h1 class="petTitle">Info</h1>
+            <p>Camera Make: </p>
+            <p>Camera Model: </p>
+            <p>Downloads: 1840</p>
+            <p>Photo Submitted On: 2020-03-15 18:39:05.346005</p>
+            <p>Tags: ["photos"]</p>
+        </div>
+        <div>
+            <h1 class="petTitle">Credit</h1>
+            <p>Photographer Name: Jonatan Pie</p>
+            <p>Username: r3dmax</p>
+        </div>
     </div>
 </div>
         </div>

@@ -4,16 +4,50 @@
         <meta charset="utf-8"/>
         <title>A document with pet photos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/cpsc349-project2/styles/tailwind.css">
-        <link rel="stylesheet" href="/cpsc349-project2/styles/main.css">
+        <link rel="stylesheet" href="/styles/tailwind.css">
+        <link rel="stylesheet" href="/styles/main.css">
     </head>
-    <body style="background-color: ;">
+    <style>
+        :root {
+  --red: ;
+  --green: ;
+  --blue: ;
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+.background {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+    </style>
+    <body class="background">
         <div class="wrapper">    
             <nav>
                 
-                <a href="/">Home</a>
+                <a href="/cpsc349-project1/">Home</a>
                 
-                <a href="/about/">About</a>
+                <a href="/cpsc349-project1/about/">About</a>
             </nav>
             <header>
                 <h1>
@@ -27,7 +61,7 @@
             <ul>
     
         <li>
-            <a href="/photos/090/">
+            <a href="/cpsc349-project1/photos/090/">
                 A dog photo
                 by FLOUFFY 
             </a>
@@ -35,7 +69,7 @@
         </li>
     
         <li>
-            <a href="/photos/091/">
+            <a href="/cpsc349-project1/photos/091/">
                 A cat photo
                 by Agustin Fernandez
             </a>
@@ -43,7 +77,7 @@
         </li>
     
         <li>
-            <a href="/photos/092/">
+            <a href="/cpsc349-project1/photos/092/">
                 A dog photo
                 by Fabian Gieske
             </a>
@@ -51,7 +85,7 @@
         </li>
     
         <li>
-            <a href="/photos/093/">
+            <a href="/cpsc349-project1/photos/093/">
                 A cat photo
                 by Slavy Darozhkin
             </a>
@@ -59,7 +93,7 @@
         </li>
     
         <li>
-            <a href="/photos/094/">
+            <a href="/cpsc349-project1/photos/094/">
                 A dog photo
                 by FLOUFFY 
             </a>
@@ -67,7 +101,7 @@
         </li>
     
         <li>
-            <a href="/photos/095/">
+            <a href="/cpsc349-project1/photos/095/">
                 A dog photo
                 by Marcos Paulo Prado
             </a>
@@ -75,7 +109,7 @@
         </li>
     
         <li>
-            <a href="/photos/096/">
+            <a href="/cpsc349-project1/photos/096/">
                 A dog photo
                 by FLOUFFY 
             </a>
@@ -83,7 +117,7 @@
         </li>
     
         <li>
-            <a href="/photos/097/">
+            <a href="/cpsc349-project1/photos/097/">
                 A rabbit photo
                 by Sincerely Media 
             </a>
@@ -91,7 +125,7 @@
         </li>
     
         <li>
-            <a href="/photos/098/">
+            <a href="/cpsc349-project1/photos/098/">
                 A dog photo
                 by Melissa Keizer
             </a>
@@ -99,7 +133,7 @@
         </li>
     
         <li>
-            <a href="/photos/099/">
+            <a href="/cpsc349-project1/photos/099/">
                 A dog photo
                 by Melissa Keizer
             </a>
@@ -110,7 +144,7 @@
 <div class="row">
     <div class="column">
         
-            <a href="/8/index.html"><img src="https://img.icons8.com/ios-filled/50/000000/circled-chevron-left.png" width="50px" height="50px"/></a>
+            <a href="/cpsc349-project2/8/index.html"><img src="https://img.icons8.com/ios-filled/50/000000/circled-chevron-left.png" width="50px" height="50px"/></a>
         
     </div>
     <div class="column">

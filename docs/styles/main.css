@@ -21,7 +21,6 @@ li {
 }
 h1 {
     font-weight: bold;
-    color: black;
 }
 p {
     line-height: 1.6em;
@@ -35,7 +34,6 @@ p:last-child {
 
 a {
     font-weight: bold;
-    color: black;
     text-decoration: underline;
     transition: all 200ms;
 }
@@ -118,4 +116,37 @@ footer {
 .aboutTitle {
     text-align: center; 
     padding-top: 1rem;
+}
+
+.aboutContent {
+    padding-top: 4rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.aboutCard {
+    margin: auto;
+    width: 40%;
+    border: 3px solid black;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+/* ************ */
+/* Content CSS */
+/* ************ */
+
+.petContent {
+    width: 20%;
+    height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    line-height: 2;
+}
+
+.infoPadding {
+    padding-left: 2rem;
+}
+
+.petTitle {
+    font-size: large;
 }
