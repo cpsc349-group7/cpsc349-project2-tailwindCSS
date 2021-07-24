@@ -5,67 +5,53 @@
         <title>A document with pet photos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
-        <link rel="stylesheet" href="{{ '/styles/main.css' | url }}">
-    </head>
-    <style>
-        :root {
-  --red: {{red}};
-  --green: {{green}};
-  --blue: {{blue}};
-
-  --accessible-color: calc(
-    (
-      (
-        (
-          (var(--red) * 299) +
-          (var(--green) * 587) +
-          (var(--blue) * 114)
-        ) / 1000
-      ) - 128
-    ) * -1000
-  );
-}
-
-.background {
-  color:
-    rgb(
-      var(--accessible-color),
-      var(--accessible-color),
-      var(--accessible-color)
-    );
-  background-color:
-    rgb(
-      var(--red),
-      var(--green),
-      var(--blue)
-    );
-}
-    </style>
-    <body class="background">
-        <div class="wrapper">    
-            <nav>
+        <!-- <link rel="stylesheet" href="{{ '/styles/main.css' | url }}"> -->       
+    </head>  
+   
+ 
+    
+        <div class="relative h-32 w-35  bg-yellow-300   ...">
+            <div class="absolute inset-x-10 top-10 h-16 text-sm text-blue-600 ...">
+                <nav>
                 {% unless page.url == '/' %}
-                <a href="/">Home</a>
+                <a href="/cpsc349-project2/">Home</a>
                 {% endunless %}
-                <a href="/about/">About</a>
-            </nav>
-            <header>
-                <h1>
-                    Pet photos from
-                    <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-                        Unsplash
-                    </a>
-                </h1>
-            </header>
-            <h1>{{ site }}</h1>
-            {{ content }}
+                    <a href="/cpsc349-project2/about.html/" class="hover:bg-yellow-600">About</a>
+                </nav>
+            </div>
         </div>
-        <footer>
-            <h1>
-                @ 2021. All Rights Reserved. Unsplash®
-            </h1>
+
+        <div class="flex-initial">
+            <div class="px-80 py-8 text-3xl font-semibold font-serif ...">
+                Pet photos from
+                <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" 
+                class="underline text-5xl...">
+                    Unsplash
+                </a>        
+                
+            </div>
+        </div>
+      
+            
+            <h1>{{ site }}</h1>
+            <div class="space y-4 ...">
+              {{ content }}
+            </div>
+            
+        
+            <div class="relative h-28 w-34  bg-yellow-300   ...">
+                <div class="absolute inset-x-10 top-10 h-16 text-sm text-blue-600 ...">
+                    <footer>
+           
+                        <h1>
+                            @ 2021. All Rights Reserved. Unsplash®
+                        </h1>
+                </div>
+            </div>
+            
         </footer>
         
     </body>
     
 </html>
+
