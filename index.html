@@ -8,16 +8,20 @@ pagination:
 ---
 <ul>
     {% for photo in pics %}
-        <li>
-            <a href="{{ photo.url }}">
-                A {{ photo.data.photo_keyword }} photo
-                by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
+    <div class="py-4 px-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+        <li class="text-sm" >
+            <a class="underline font-bold" href="{{ photo.url }}">             
+                    A {{ photo.data.photo_keyword }} photo
+                    
+                    by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
             </a>
+          
             <br>{{ photo.data.ai_description }} 
         </li>
+    </div>
     {% endfor %}
 </ul>
-<div class="row">
+<div class="row px-10">
     <div class="column">
         {% if pagination.previous %}
             <a href="{{ pagination.previous }}"><img src="https://img.icons8.com/ios-filled/50/000000/circled-chevron-left.png" width="50px" height="50px"/></a>
@@ -25,7 +29,7 @@ pagination:
     </div>
     <div class="column">
         {% if pagination.next %}
-            <a href="{{ pagination.next }}"><img class="rightarrow" src="https://img.icons8.com/ios-filled/50/000000/circled-chevron-left.png" width="50px" height="50px"/></a>
+            <a href="{{ pagination.next }}"><img class="rightarrow" src="https://img.icons8.com/ios-filled/50/000000/circled-chevron-right.png" width="50px" height="50px"/></a>
         {% endif %}
     </div>
 </div>
