@@ -4,9 +4,45 @@
         <meta charset="utf-8"/>
         <title>A document with pet photos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/cpsc349-project2/styles/tailwind.css">
-        <!-- <link rel="stylesheet" href="/cpsc349-project2/styles/main.css"> -->       
+        <link rel="stylesheet" href="/styles/tailwind.css">
+               
     </head>  
+
+    <style>
+        :root {
+  --red: ;
+  --green: ;
+  --blue: ;
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+.background {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+    </style>
+    <body class="background">
    
  
     
@@ -14,9 +50,9 @@
             <div class="absolute inset-x-10 top-10 h-16 text-sm text-blue-600 ...">
                 <nav>
                 
-                <a href="/cpsc349-project2/">Home</a>
+                <a href="/">Home</a>
                 
-                    <a href="/cpsc349-project2/about.html/" class="hover:bg-yellow-600">About</a>
+                    <a href="/about" class="hover:bg-yellow-600">About</a>
                 </nav>
             </div>
         </div>
@@ -35,76 +71,110 @@
             
             <h1></h1>
             <div class="space y-4 ...">
-              <div class="aboutCard">
-    <header class="aboutHeader">
+              
+    <header class="font-bold px-11">
         <h1>
             About Us
         </h1>
     </header>
 
-    <div class="aboutTitle">
+    <div class="aboutTitle px-11 font-serif">
         <p>Young programmers practicing web design!</p>
         <p> This is a cute and fun website to store pictures of dogs.</p>
         <p> We Plan on expanding on this and creating a more stylistic page</p>
     </div> 
+
+   <div class="grid gap-4 grid-cols-3 px-10 py-5">
+
+
+    <div>
+        <h1>
+            Guanlin Wang
+        </h1>
+        <p>Hi, I'm Guanlin Wang. I live in in Irvine. 
+            I'm a Computer Science student at Cal State Fullerton.
+             I currently only know C++, but I will be learning 
+             more different languages.
+        </p>
+    </div>
+
+    <div>
+        <h1>
+            Nicholas Lui
+        </h1>
+        <p>Hi, my name is Nicholas Lui and I'm from Temecula, 
+        California. I'm a Computer Science student at 
+        Cal State Fullerton focusing on front-end development.
+        My skills include C++, JavaScript, React, HTML/CSS 
+        as well as experience with the flutter framework.</p>
+    </div>
+
+    <div>
+        <h1>
+            Adrian Perez
+        </h1>
+        <p>Hello, My name is Adrian Perez. Currently residing 
+        in Huntington Beach, California. I'm majoring 
+        in Computer Science at Cal State University. 
+        I'm familiar mainly with C++ so far, but I am eager
+        to expand my skills and knowledge.</p>
+    </div>
+    <div>
+        <h1>
+            Farnam Keshavarzian
+        </h1>
+        <p>Hi, my name is Farnam and I usually don't say my 
+        last name due to its length. I am a computer 
+        science major at Cal State Fullerton, eager to
+        get my degree by the end of next spring. I love
+        C++ and windows!</p>
+    </div>
+    <div>
+        <h1>
+            Ramon Amini
+        </h1>
+        <p>Hello, I'm Ramon Amini. I was born in Germany 
+        and moved to America in 2014. I am currently 
+        majoring in Computer Science, completing my 
+        senior year ant Cal State Fullerton. My primary 
+        coding language is C++ and I am an experienced 
+        Mobile App developer with my main focus being 
+        iOS. In the past, I have also worked as a 
+        website developer using JavaScript, HTML, CSS.</p>
+    </div>
+</div>
+
+
+<div class="felx-auto px-11 bg-blue-300 font-serif font-bold">
+    <div class="websiteHeader">
+        <h1>Website Versions</h1>
+    </div>
     <div class="aboutContent">
         <div>
-            <h1>
-                Guanlin Wang
-            </h1>
-            <p>Hi, I'm Guanlin Wang. I live in in Irvine. 
-                I'm a Computer Science student at Cal State Fullerton.
-                 I currently only know C++, but I will be learning 
-                 more different languages.
-            </p>
-        </div>
-
-        <div>
-            <h1>
-                Nicholas Lui
-            </h1>
-            <p>Hi, my name is Nicholas Lui and I'm from Temecula, 
-            California. I'm a Computer Science student at 
-            Cal State Fullerton focusing on front-end development.
-            My skills include C++, JavaScript, React, HTML/CSS 
-            as well as experience with the flutter framework.</p>
-        </div>
-
-        <div>
-            <h1>
-                Adrian Perez
-            </h1>
-            <p>Hello, My name is Adrian Perez. Currently residing 
-            in Huntington Beach, California. I'm majoring 
-            in Computer Science at Cal State University. 
-            I'm familiar mainly with C++ so far, but I am eager
-            to expand my skills and knowledge.</p>
+            <a href="https://cpsc349-group7.github.io/cpsc349-project2-flexbox/"><p>1) A Flexbox layout using standard CSS</p></a>
         </div>
         <div>
-            <h1>
-                Farnam Keshavarzian
-            </h1>
-            <p>Hi, my name is Farnam and I usually don't say my 
-            last name due to its length. I am a computer 
-            science major at Cal State Fullerton, eager to
-            get my degree by the end of next spring. I love
-            C++ and windows!</p>
+            <a href="https://cpsc349-group7.github.io/cpsc349-project2-grid/"><p>1) A Grid layout using standard CSS</p></a>
         </div>
         <div>
-            <h1>
-                Ramon Amini
-            </h1>
-            <p>Hello, I'm Ramon Amini. I was born in Germany 
-            and moved to America in 2014. I am currently 
-            majoring in Computer Science, completing my 
-            senior year ant Cal State Fullerton. My primary 
-            coding language is C++ and I am an experienced 
-            Mobile App developer with my main focus being 
-            iOS. In the past, I have also worked as a 
-            website developer using JavaScript, HTML, CSS.</p>
+            <a href="https://cpsc349-group7.github.io/cpsc349-project2-tailwindCSS/"><p>3) A version of layout Grid using built-in Tailwind CSS classes</p></a>
+        </div>
+        <div>
+            <a href="https://cpsc349-group7.github.io/cpsc349-project2--TailwindCustomComponentClass/"><p>4) A version of (3) using Tailwind custom component classes.</p></a>
+        </div>
+        <div>
+            <div class="websiteHeader">
+                <h1>Three Wireframes</h1>
+            </div>
+            <a href="https://www.figma.com/file/GIG4CxyTNcH89EqvBd9dLd/Page-Wireframes-CSS?node-id=0%3A1"><p>Version 1 on Figma</p></a>
+            <a href="https://www.figma.com/file/GIG4CxyTNcH89EqvBd9dLd/Page-Wireframes-CSS?node-id=107%3A90"><p>Version 2 on Figma</p></a>
+            <a href="https://www.figma.com/file/GIG4CxyTNcH89EqvBd9dLd/Page-Wireframes-CSS?node-id=107%3A92"><p>Version 3 on Figma</p></a>
         </div>
     </div>
 </div>
+  </div>
+
+
             </div>
             
         

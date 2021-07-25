@@ -4,9 +4,45 @@
         <meta charset="utf-8"/>
         <title>A document with pet photos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/cpsc349-project2/styles/tailwind.css">
-        <!-- <link rel="stylesheet" href="/cpsc349-project2/styles/main.css"> -->       
+        <link rel="stylesheet" href="/styles/tailwind.css">
+               
     </head>  
+
+    <style>
+        :root {
+  --red: 243;
+  --green: 242;
+  --blue: 243;
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+.background {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+    </style>
+    <body class="background">
    
  
     
@@ -14,9 +50,9 @@
             <div class="absolute inset-x-10 top-10 h-16 text-sm text-blue-600 ...">
                 <nav>
                 
-                <a href="/cpsc349-project2/">Home</a>
+                <a href="/">Home</a>
                 
-                    <a href="/cpsc349-project2/about.html/" class="hover:bg-yellow-600">About</a>
+                    <a href="/about" class="hover:bg-yellow-600">About</a>
                 </nav>
             </div>
         </div>
@@ -39,7 +75,7 @@
 
 
 
-<div class="grid gap-4 grid-cols-3 px-10 py-5 bg-red-300 ">
+<div class="grid gap-4 grid-cols-3 px-10 py-5">
     <div class= "petContent column font-serif">
             <figure>
         <img src="https://images.unsplash.com/photo-1578778805767-4a0d2677e9fb" height="600" />
