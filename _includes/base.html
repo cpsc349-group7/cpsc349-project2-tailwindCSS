@@ -7,6 +7,42 @@
         <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
                
     </head>  
+
+    <style>
+        :root {
+  --red: {{red}};
+  --green: {{green}};
+  --blue: {{blue}};
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+.background {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+    </style>
+    <body class="background">
    
  
     
