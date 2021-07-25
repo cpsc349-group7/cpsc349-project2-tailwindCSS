@@ -5,53 +5,81 @@
         <title>A document with pet photos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/cpsc349-project2/styles/tailwind.css">
-        <link rel="stylesheet" href="/cpsc349-project2/styles/main.css">
-    </head>
-    <body style="background-color: darkgray;">
-        <div class="wrapper">    
-            <nav>
+        <!-- <link rel="stylesheet" href="/cpsc349-project2/styles/main.css"> -->       
+    </head>  
+   
+ 
+    
+        <div class="relative h-32 w-35  bg-yellow-300   ...">
+            <div class="absolute inset-x-10 top-10 h-16 text-sm text-blue-600 ...">
+                <nav>
                 
-                <a href="/">Home</a>
+                <a href="/cpsc349-project2/">Home</a>
                 
-                <a href="/about/">About</a>
-            </nav>
-            <header>
-                <h1>
-                    Pet photos from
-                    <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-                        Unsplash
-                    </a>
-                </h1>
-            </header>
-            <h1></h1>
+                    <a href="/cpsc349-project2/about.html/" class="hover:bg-yellow-600">About</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="flex-initial">
+            <div class="px-80 py-8 text-3xl font-semibold font-serif ...">
+                Pet photos from
+                <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" 
+                class="underline text-5xl...">
+                    Unsplash
+                </a>        
+                
+            </div>
+        </div>
+      
             
-    <figure>
+            <h1></h1>
+            <div class="space y-4 ...">
+              
+
+
+
+<div class="grid gap-4 grid-cols-3 px-10 py-5 bg-red-300 ">
+    <div class= "petContent column font-serif">
+            <figure>
         <img src="https://images.unsplash.com/photo-1542317858-043bf4d34f9f" height="600" />
         <figcaption>This cat was proudly walking around the ancient Roman ruins of Masada. Like he owned the place.</figcaption>
     </figure>
 
-<div>
-    <div>
-        <h1>Info</h1>
-        <p>Camera Make: Canon</p>
-        <p>Camera Model: Canon EOS 6D</p>
-        <p>Downloads: 2411</p>
-        <p>Photo Submitted On: 2018-11-15 21:39:57.32044</p>
-        <p>Tags: ["photos"]</p>
-    </div>
-    <div>
-        <h1>Credit</h1>
-        <p>Photographer Name: Cole Keister</p>
-        <p>Username: coleito</p>
-    </div>
-</div>
+  </div>
+        
+<div class="column infoPadding">
+        <div>
+            <h1 class="font-bold">Info</h1>
+            <p>Camera Make: Canon</p>
+            <p>Camera Model: Canon EOS 6D</p>
+            <p>Downloads: 2411</p>
+            <p>Photo Submitted On: 2018-11-15 21:39:57.32044</p>
+            <p>Tags: ["photos"]</p>
         </div>
-        <footer>
-            <h1>
-                @ 2021. All Rights Reserved. Unsplash®
-            </h1>
+        <div class=py-10>
+            <h1 class="font-bold">Credit</h1>
+            <p>Photographer Name: Cole Keister</p>
+            <p>Username: coleito</p>
+        </div>
+</div>
+
+            </div>
+            
+        
+            <div class="relative h-28 w-34  bg-yellow-300   ...">
+                <div class="absolute inset-x-10 top-10 h-16 text-sm text-blue-600 ...">
+                    <footer>
+           
+                        <h1>
+                            @ 2021. All Rights Reserved. Unsplash®
+                        </h1>
+                </div>
+            </div>
+            
         </footer>
         
     </body>
     
 </html>
+
